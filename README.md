@@ -1,2 +1,2 @@
-<h1># EDES301<h1\>
+# EDES301
 Repository for EDES301 course work
