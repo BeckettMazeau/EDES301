@@ -3,7 +3,7 @@
 Button Driver
 --------------------------------------------------------------------------
 License:   
-Copyright 2021-2024 - <Your Name>
+Copyright 2021-2026 - <Beckett Lyons Mazeau>
 
 Redistribution and use in source and binary forms, with or without 
 modification, are permitted provided that the following conditions are met:
@@ -41,22 +41,14 @@ between the button and the processor pin (i.e. the input is "Low" / "0" when the
 button is not pressed) and will be connected to power when the button is pressed
 (i.e. the input is "High" / "1" when the button is pressed).
 
-  To select the pull up configuration, active_low=True.  To select the pull down
-configuration, active_low=False.
+  To select the pull up configuration, press_low=True.  To select the pull down
+configuration, press_low=False.
 
 
 Software API:
 
-  Button(pin, sleep_time=0.1, active_low=True)
+  Button(pin, press_low)
     - Provide pin that the button monitors
-    - The sleep_time is the time between calls to the callback functions
-      while the button is waiting in either the pressed or unpressed state
-    - By default, the button is "active_low" (i.e. the button has a 
-      pull up resistor between the button and the processor pin and 
-      will be connected to ground when the button is pressed.  The 
-      input is "High"/"1" when the button is not pressed, and the 
-      input is "Low" / "0" when the button is pressed).  If false, 
-      the button has the opposite polarity.
     
     wait_for_press()
       - Wait for the button to be pressed 
@@ -90,6 +82,7 @@ Software API:
       - get_unpressed_callback_value()
       - get_on_press_callback_value()
       - get_on_release_callback_value()      
+
 
 """
 import time
@@ -133,28 +126,26 @@ class Button():
     on_release_callback_value     = None
     
     
-    def __init__(self, pin=None, sleep_time=0.1, active_low=True):
+    def __init__(self, pin=None, press_low=True, sleep_time=0.1):
         """ Initialize variables and set up the button """
         if (pin == None):
             raise ValueError("Pin not provided for Button()")
         else:
             self.pin = pin
         
-        # For pull up resistor configuration:    active_low = True
-        # For pull down resistor configuration:  active_low = False
-        if active_low:
+        # For pull up resistor configuration:    press_low = True
+        # For pull down resistor configuration:  press_low = False
+        if press_low:
             self.unpressed_value = HIGH
             self.pressed_value   = LOW
         else:
             self.unpressed_value = LOW
             self.pressed_value   = HIGH
         
-        # Initialize Class Variables      
+        # By default sleep time is "0.1" seconds
         self.sleep_time      = sleep_time
         self.press_duration  = 0.0        
 
-        # All callback functions and values set to None if not used        
-        
         # Initialize the hardware components        
         self._setup()
     
@@ -164,7 +155,7 @@ class Button():
     def _setup(self):
         """ Setup the hardware components. """
         # Initialize Button
-        GPIO.setup(self.pin, GPIO.IN)
+        GPIO.setup(self.pin, GPIO.OUT)
 
     # End def
 
@@ -175,7 +166,10 @@ class Button():
            Returns:  True  - Button is pressed
                      False - Button is not pressed
         """
-        return GPIO.input(self.pin) == self.pressed_value
+
+        if GPIO.input(self.pin) == self.pressed_value:
+            return True
+        else: return False
 
     # End def
 
@@ -197,7 +191,8 @@ class Button():
         # Wait for button press
         #   Execute the unpressed callback function based on the sleep time
         #
-        while(GPIO.input(self.pin) == self.unpressed_value):
+
+        while(not self.is_pressed()):
         
             if self.unpressed_callback is not None:
                 self.unpressed_callback_value = self.unpressed_callback()
@@ -214,7 +209,8 @@ class Button():
         # Wait for button release
         #   Execute the pressed callback function based on the sleep time
         #
-        while(GPIO.input(self.pin) == self.pressed_value):
+
+        while(self.is_pressed()):
         
             if self.pressed_callback is not None:
                 self.pressed_callback_value = self.pressed_callback()
@@ -350,8 +346,9 @@ if __name__ == '__main__':
         
         print("Waiting for button press ...")
         button.wait_for_press()
-        print("    Button pressed for {0} seconds. ".format(button.get_last_press_duration()))
-        
+        print("    Button pressed for {0} seconds. ".format(button.get_last_press_duration()))        
+        time.sleep(4)
+
         print("Setting callback functions ... ")
         button.set_pressed_callback(pressed)
         button.set_unpressed_callback(unpressed)
