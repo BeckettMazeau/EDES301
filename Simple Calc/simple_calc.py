@@ -85,6 +85,31 @@ operators = {
     "div" : operator.truediv,
     "divide" : operator.truediv,
     "division" : operator.truediv,
+    "right shift" : operator.rshift,
+    "rshift": operator.rshift,
+    "right-shift": operator.rshift,
+    "shift right": operator.rshift,
+    ">>": operator.rshift,
+    "signed right shift": operator.rshift,
+    "left shift": operator.lshift,
+    "lshift": operator.lshift,
+    "left-shift": operator.lshift,
+    "shift left": operator.lshift,
+    "<<": operator.lshift,
+    "zero fill left shift": operator.lshift,
+    "mod": operator.mod,
+    "modulus": operator.mod,
+    "modulo": operator.mod,
+    "%": operator.mod,
+    "^": operator.pow,
+    "**": operator.pow,
+    "pow": operator.pow,
+    "power": operator.pow,
+    "raise": operator.pow,
+    "raised": operator.pow,
+    "exponent": operator.pow,
+    "exponentiation": operator.pow,
+
     "stop":"exit",
     "exit":"exit",
     "end": "exit"
@@ -93,7 +118,11 @@ ops_to_symbols = {
     operator.add: "+",
     operator.sub: "-",
     operator.mul: "*",
-    operator.truediv: "/"
+    operator.truediv: "/",
+    operator.lshift : "<<",
+    operator.mod: "%",
+    operator.pow: "^",
+    operator.rshift : ">>"
 }
 
 
@@ -122,6 +151,9 @@ def get_user_input():
                                "Subtraction: -\n"
                                "Multiplication: *\n"
                                "Division: /\n"
+                               "Modulus: %\n"
+                               "Right Shift: >>\n"
+                               "Left Shift: <<\n"
                                "Exit Program: Exit")
             operation_input = re.sub(r'\d+', '', operation_input.strip().lower())
             if (operation_input not in operators) or (operation_input == "") or operation_input == None:
