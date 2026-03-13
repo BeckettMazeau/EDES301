@@ -1,8 +1,29 @@
 # -*- coding: utf-8 -*-
 """
 --------------------------------------------------------------------------
+
 Simple Calculator
+
 --------------------------------------------------------------------------
+
+Simple calculator that will
+  - Take in two numbers from the user
+  - Take in an operator from the user
+  - Perform the mathematical operation and provide the number to the user
+  - Repeat
+
+Operations:
+  - "+" : addition
+  - "-" : subtraction
+  - "*" : multiplication
+  - "/" : division
+
+Error conditions:
+  - Invalid operator --> Program should exit
+  - Invalid number   --> Program should exit
+
+--------------------------------------------------------------------------
+
 License:   
 Copyright 2026 - <Beckett Mazeau>
 
@@ -33,23 +54,6 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
 THE POSSIBILITY OF SUCH DAMAGE.
 --------------------------------------------------------------------------
 
-Simple calculator that will 
-  - Take in two numbers from the user
-  - Take in an operator from the user
-  - Perform the mathematical operation and provide the number to the user
-  - Repeat
-
-Operations:
-  - "+" : addition
-  - "-" : subtraction
-  - "*" : multiplication
-  - "/" : division
-
-Error conditions:
-  - Invalid operator --> Program should exit
-  - Invalid number   --> Program should exit
-
---------------------------------------------------------------------------
 """
 
 # NOTE - Add import statements to allow access to Python library functions
@@ -254,7 +258,28 @@ if __name__ == "__main__":
             print("Exiting...")
             break
         op_symbol = ops_to_symbols[operators[operator_input]]
-        value = operators[operator_input](number1_input, number2_input)
+        value = 0
+        num1 = 0
+        num2 = 0
+        if op_symbol == ">>" or op_symbol == "<<":
+
+            try:
+                num1 = int(number1_input)
+                num2 = int(number2_input)
+            except:
+                print("An unexpected error occurred. Please try again.\n"
+                      "Note: The selected operation does not support floats.")
+                continue
+
+            if (not float.is_integer(number1_input)) and (not float.is_integer(number2_input)):
+                print("One or more input numbers are a non-integer.\n"
+                      "Non-integers are not supported for this operation.\n"
+                      "Casting to integer.")
+
+        else:
+            num1 = number1_input
+            num2 = number2_input
+        value = operators[operator_input](num1, num2)
         print(f"\n\nOutput:\n {number1_input} {op_symbol} {number2_input} = {value:.5f}\n")
 
 

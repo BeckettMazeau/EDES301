@@ -1,14 +1,19 @@
 """
 ---------------------------------------------------------------------------
+
 Blink LED (For PocketBeagle Rev A2B)
+
 ---------------------------------------------------------------------------
+
 Blinks the USR3 LED onboard a PocketBeagle 1 at 5Hz.
 
 This module utilizes the Adafruit_BBIO library to control the GPIO pins.
 It sets up the USR3 LED as an output and toggles its state in a time-limited
 loop to create a 5Hz blinking effect.
+
 ---------------------------------------------------------------------------
-Authors: Beckett Lyons Mazeau beckett.mazeau@rice.edu)
+
+Authors: Beckett Lyons Mazeau (beckett.mazeau@rice.edu)
 
 Copyright 2026, Beckett Lyons Mazeau
 
@@ -32,6 +37,7 @@ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PRO
 SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
 WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
 ---------------------------------------------------------------------------
 
 """
