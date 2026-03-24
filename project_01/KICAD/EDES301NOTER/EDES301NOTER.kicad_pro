@@ -518,6 +518,12 @@
       "/+5V": [
         "+5V"
       ],
+      "/BATT_TEMP": [
+        "DATA"
+      ],
+      "/BOOST_PWR": [
+        "DATA"
+      ],
       "/CARD_SCL": [
         "DATA"
       ],
@@ -525,6 +531,36 @@
         "DATA"
       ],
       "/DATA": [
+        "DATA"
+      ],
+      "/EPPR_BUSY": [
+        "DATA"
+      ],
+      "/EPPR_CLK": [
+        "DATA"
+      ],
+      "/EPPR_CS": [
+        "DATA"
+      ],
+      "/EPPR_D{slash}C": [
+        "DATA"
+      ],
+      "/EPPR_MISO": [
+        "DATA"
+      ],
+      "/EPPR_PWR": [
+        "DATA"
+      ],
+      "/EPPR_RST": [
+        "DATA"
+      ],
+      "/PB_LID": [
+        "DATA"
+      ],
+      "/PB_PWR": [
+        "DATA"
+      ],
+      "/TFT_BL": [
         "DATA"
       ],
       "/TFT_BL_CNTRL": [
@@ -542,10 +578,16 @@
       "/TFT_RESET": [
         "DATA"
       ],
+      "/TFT_RST": [
+        "DATA"
+      ],
       "/TFT_SCL": [
         "DATA"
       ],
       "/TFT_SDA": [
+        "DATA"
+      ],
+      "/TFT_SDL": [
         "DATA"
       ],
       "/TFT_SDO": [
