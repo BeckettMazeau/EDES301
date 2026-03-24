@@ -509,13 +509,46 @@
       "+3.3VA": [
         "+3.3V"
       ],
+      "+5V": [
+        "+5V"
+      ],
       "-BATT": [
         "GND"
       ],
       "/+5V": [
         "+5V"
       ],
+      "/CARD_SCL": [
+        "DATA"
+      ],
+      "/CARD_SDA": [
+        "DATA"
+      ],
       "/DATA": [
+        "DATA"
+      ],
+      "/TFT_BL_CNTRL": [
+        "DATA"
+      ],
+      "/TFT_CSX": [
+        "DATA"
+      ],
+      "/TFT_D{slash}C": [
+        "DATA"
+      ],
+      "/TFT_PWR": [
+        "DATA"
+      ],
+      "/TFT_RESET": [
+        "DATA"
+      ],
+      "/TFT_SCL": [
+        "DATA"
+      ],
+      "/TFT_SDA": [
+        "DATA"
+      ],
+      "/TFT_SDO": [
         "DATA"
       ]
     },
