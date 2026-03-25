@@ -430,7 +430,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -518,6 +518,9 @@
       "/+5V": [
         "+5V"
       ],
+      "/5V Boost Converter/BOOST_PWR": [
+        "DATA"
+      ],
       "/BATT_TEMP": [
         "DATA"
       ],
@@ -528,6 +531,15 @@
         "DATA"
       ],
       "/CARD_SDA": [
+        "DATA"
+      ],
+      "/CardKB/CARD_SCL": [
+        "DATA"
+      ],
+      "/CardKB/CARD_SDA": [
+        "DATA"
+      ],
+      "/CardKB/DATA": [
         "DATA"
       ],
       "/DATA": [
@@ -554,10 +566,37 @@
       "/EPPR_RST": [
         "DATA"
       ],
+      "/Hall Effect Power Switch/PB_LID": [
+        "DATA"
+      ],
+      "/Hall Effect Power Switch/PB_PWR": [
+        "DATA"
+      ],
       "/PB_LID": [
         "DATA"
       ],
       "/PB_PWR": [
+        "DATA"
+      ],
+      "/TFT Display/TFT_BL": [
+        "DATA"
+      ],
+      "/TFT Display/TFT_CSX": [
+        "DATA"
+      ],
+      "/TFT Display/TFT_D{slash}C": [
+        "DATA"
+      ],
+      "/TFT Display/TFT_RST": [
+        "DATA"
+      ],
+      "/TFT Display/TFT_SDA": [
+        "DATA"
+      ],
+      "/TFT Display/TFT_SDL": [
+        "DATA"
+      ],
+      "/TFT Display/TFT_SDO": [
         "DATA"
       ],
       "/TFT_BL": [
@@ -591,6 +630,27 @@
         "DATA"
       ],
       "/TFT_SDO": [
+        "DATA"
+      ],
+      "/ePaper Support Circuit/EPPR_BUSY": [
+        "DATA"
+      ],
+      "/ePaper Support Circuit/EPPR_CLK": [
+        "DATA"
+      ],
+      "/ePaper Support Circuit/EPPR_CS": [
+        "DATA"
+      ],
+      "/ePaper Support Circuit/EPPR_D{slash}C": [
+        "DATA"
+      ],
+      "/ePaper Support Circuit/EPPR_MISO": [
+        "DATA"
+      ],
+      "/ePaper Support Circuit/EPPR_PWR": [
+        "DATA"
+      ],
+      "/ePaper Support Circuit/EPPR_RST": [
         "DATA"
       ]
     },
@@ -629,7 +689,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "C:\\Users\\becke\\Downloads\\STIKE_BOM__V0_99.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -691,12 +751,108 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description_1",
+          "name": "Description_1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -744,6 +900,26 @@
     [
       "3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4",
       "Root"
+    ],
+    [
+      "1a5f4184-f9c0-4f46-a2c7-a39db270c573",
+      "5V Boost Converter"
+    ],
+    [
+      "7d76e33c-e520-4ea9-bbcd-6cf2c2095ff2",
+      "Hall Effect Power Switch"
+    ],
+    [
+      "94892c2d-7155-4b73-8c30-6c5f3edee7eb",
+      "TFT Display"
+    ],
+    [
+      "5dda88bf-59f5-47b6-a0e5-bf5a75c49c5b",
+      "CardKB"
+    ],
+    [
+      "7304c9f9-40d1-49dd-846e-ae25e62035ae",
+      "ePaper Support Circuit"
     ]
   ],
   "text_variables": {}

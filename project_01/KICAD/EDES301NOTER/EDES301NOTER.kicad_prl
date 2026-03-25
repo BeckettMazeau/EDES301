@@ -113,7 +113,32 @@
   },
   "open_jobsets": [],
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "EDES301NOTER.kicad_pcb",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": -8,
+          "pos_y": -8,
+          "size_x": 2576,
+          "size_y": 1408
+        }
+      },
+      {
+        "name": "EDES301NOTER.kicad_sch",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": -8,
+          "pos_y": -8,
+          "size_x": 2576,
+          "size_y": 1408
+        }
+      }
+    ]
   },
   "schematic": {
     "selection_filter": {
