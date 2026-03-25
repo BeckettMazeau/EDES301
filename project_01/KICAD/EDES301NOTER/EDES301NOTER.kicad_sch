@@ -2536,16 +2536,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 113.03) (xy 99.06 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15363849-83c5-4a34-8e5d-4408df1cf40a")
-	)
-	(wire
-		(pts
 			(xy 149.86 123.19) (xy 154.94 123.19)
 		)
 		(stroke
@@ -2643,6 +2633,16 @@
 			(type default)
 		)
 		(uuid "4a1a17e5-34ef-4126-a4eb-86546d6ca842")
+	)
+	(wire
+		(pts
+			(xy 149.86 130.81) (xy 166.37 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54ddcc14-9136-406c-bfa9-8e2ee70ce8f7")
 	)
 	(wire
 		(pts
@@ -2948,27 +2948,6 @@
 			)
 		)
 	)
-	(label "PB_PWR"
-		(at 93.98 113.03 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4cf529f6-385c-42b7-a1ea-5aa113daa4bd")
-		(property "Netclass" "DATA"
-			(at 93.98 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify right)
-			)
-		)
-	)
 	(label "EPPR_MISO"
 		(at 95.25 69.85 180)
 		(fields_autoplaced yes)
@@ -3156,6 +3135,27 @@
 		(uuid "9b5f0d8b-0906-40c3-89e9-46551438a1ef")
 		(property "Netclass" "DATA"
 			(at 166.37 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(label "PB_PWR"
+		(at 166.37 130.81 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e05ca27-2ca0-4f49-b759-ef0a852dcbbf")
+		(property "Netclass" "DATA"
+			(at 166.37 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3474,7 +3474,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5f1830a2-925b-4bde-bb4c-6a813634e54b")
 		(property "Reference" "RT1"
 			(at 60.96 169.0369 90)
@@ -3485,8 +3484,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "NXRT15XH103FA1B040"
-			(at 60.96 171.5769 90)
+		(property "Value" "10k - NXRT15XH103FA1B040"
+			(at 60.452 171.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
