@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4")
 	(paper "A5")
 	(title_block
@@ -25,8 +25,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
 				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -36,6 +40,8 @@
 			)
 			(property "Value" "C_Small"
 				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -45,47 +51,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "capacitor cap"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "C_Small_0_1"
@@ -118,7 +134,7 @@
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -136,7 +152,7 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 2.032)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -162,8 +178,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
 				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -172,6 +192,8 @@
 			)
 			(property "Value" "MembranePush"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -180,38 +202,46 @@
 			)
 			(property "Footprint" "STIKE:MembraneButton"
 				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 -8.636 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Push button switch, generic, symbol, four pins"
 				(at 0 -9.906 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "switch normally-open pushbutton push-button"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "MembraneButton_1_0_1"
@@ -294,24 +324,6 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 5.08 2.54 180)
 					(length 2.54)
 					(name "2"
@@ -322,6 +334,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -433,17 +463,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -452,29 +488,35 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "CARDKB_0_1"
@@ -578,8 +620,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at 1.27 2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -588,6 +634,8 @@
 			)
 			(property "Value" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -596,29 +644,35 @@
 			)
 			(property "Footprint" "STIKE:THROUGH8"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "LCD_0_1"
@@ -790,8 +844,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
 				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -800,6 +858,8 @@
 			)
 			(property "Value" "MembranePush"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -808,38 +868,46 @@
 			)
 			(property "Footprint" "STIKE:MembraneButton"
 				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 -8.636 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Push button switch, generic, symbol, four pins"
 				(at 0 -9.906 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "switch normally-open pushbutton push-button"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "MembraneButton_0_1"
@@ -922,24 +990,6 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 5.08 2.54 180)
 					(length 2.54)
 					(name "2"
@@ -950,6 +1000,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1061,8 +1129,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at 5.334 2.286 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1071,6 +1143,8 @@
 			)
 			(property "Value" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1079,29 +1153,35 @@
 			)
 			(property "Footprint" "STIKE:THROUGH8"
 				(at 4.318 -13.716 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "ePaper_0_1"
@@ -1266,7 +1346,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -1277,17 +1357,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "+3.3V"
 				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1296,38 +1382,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "+3.3V_0_1"
@@ -1372,7 +1466,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1391,7 +1485,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -1402,17 +1496,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "+5V"
 				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1421,38 +1521,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"+5V\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "+5V_0_1"
@@ -1497,7 +1605,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1516,7 +1624,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:GND"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -1527,17 +1635,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1546,38 +1660,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_0_1"
@@ -1598,7 +1720,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1643,7 +1765,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 50.8) (xy 63.5 50.8)
+			(xy 43.18 50.8) (xy 63.5 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1654,7 +1776,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 43.18) (xy 92.71 43.18)
+			(xy 87.63 43.18) (xy 99.06 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1676,7 +1798,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 38.1) (xy 63.5 38.1)
+			(xy 43.18 38.1) (xy 64.77 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1708,7 +1830,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 38.1) (xy 92.71 38.1)
+			(xy 87.63 38.1) (xy 99.06 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1719,7 +1841,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 33.02) (xy 60.96 33.02)
+			(xy 43.18 33.02) (xy 60.96 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1729,7 +1851,17 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 43.18) (xy 63.5 43.18)
+			(xy 119.38 20.32) (xy 121.92 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c8687be-7c3b-40f4-8214-a6be78ed9c69")
+	)
+	(wire
+		(pts
+			(xy 43.18 43.18) (xy 63.5 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1750,7 +1882,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 40.64) (xy 63.5 40.64)
+			(xy 43.18 40.64) (xy 63.5 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1772,7 +1904,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 40.64) (xy 92.71 40.64)
+			(xy 87.63 40.64) (xy 99.06 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1783,7 +1915,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 50.8) (xy 92.71 50.8)
+			(xy 87.63 50.8) (xy 99.06 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1805,7 +1937,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 45.72) (xy 92.71 45.72)
+			(xy 87.63 45.72) (xy 99.06 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1823,6 +1955,17 @@
 			(type default)
 		)
 		(uuid "845b5140-ce5f-4294-b151-403fe871c074")
+	)
+	(wire
+		(pts
+			(xy 111.76 20.32) (xy 111.76 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 132 132 0 1)
+		)
+		(uuid "84adae62-44f7-4bbd-b8b2-eccda76df22a")
 	)
 	(wire
 		(pts
@@ -1847,7 +1990,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 35.56) (xy 92.71 35.56)
+			(xy 90.17 35.56) (xy 99.06 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1857,7 +2000,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 33.02) (xy 92.71 33.02)
+			(xy 90.17 33.02) (xy 99.06 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1899,7 +2042,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 48.26) (xy 92.71 48.26)
+			(xy 87.63 48.26) (xy 99.06 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1932,7 +2075,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 45.72) (xy 63.5 45.72)
+			(xy 43.18 45.72) (xy 63.5 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1943,7 +2086,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 20.32) (xy 121.92 20.32)
+			(xy 87.63 20.32) (xy 111.76 20.32)
 		)
 		(stroke
 			(width 0)
@@ -1975,16 +2118,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 25.4) (xy 121.92 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6d74764-75d7-47c4-bb7d-da9133d74c10")
-	)
-	(wire
-		(pts
 			(xy 80.01 86.36) (xy 80.01 95.25)
 		)
 		(stroke
@@ -2005,7 +2138,18 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 35.56) (xy 60.96 35.56)
+			(xy 111.76 25.4) (xy 121.92 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 132 132 0 1)
+		)
+		(uuid "dc5ad3a4-4843-480a-9cb0-95281b6c8c0d")
+	)
+	(wire
+		(pts
+			(xy 43.18 35.56) (xy 60.96 35.56)
 		)
 		(stroke
 			(width 0)
@@ -2025,7 +2169,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 48.26) (xy 63.5 48.26)
+			(xy 43.18 48.26) (xy 63.5 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2036,24 +2180,30 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 118.11 25.4 270)
+		(at 119.38 20.32 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "0b79cb6f-1a8e-48ca-a5a9-fbd748011a98")
 		(property "Reference" "#PWR027"
-			(at 111.76 25.4 0)
+			(at 113.03 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
-			(at 115.57 25.4 90)
+			(at 116.84 20.32 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2062,37 +2212,43 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 25.4 0)
+			(at 119.38 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 25.4 0)
+			(at 119.38 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 118.11 25.4 0)
+			(at 119.38 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "3c326d65-0b0a-479c-918a-0025d6cdef16")
 		)
 		(instances
-			(project "EDES301NOTER"
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(reference "#PWR027")
 					(unit 1)
@@ -2104,56 +2260,68 @@
 		(lib_id "STIKE:CARDKB")
 		(at 78.74 95.25 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c2831ca-2c4e-48b0-abc1-2c23cd76d440")
 		(property "Reference" "U4"
 			(at 78.74 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 78.7401 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "HomeBrew:4_Wire_Connector"
 			(at 78.74 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 78.74 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 78.74 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2169,7 +2337,7 @@
 			(uuid "2e0ce117-c0d5-47b4-b57c-8f13260f4f75")
 		)
 		(instances
-			(project "EDES301NOTER"
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(reference "U4")
 					(unit 1)
@@ -2181,23 +2349,29 @@
 		(lib_id "power:+3.3V")
 		(at 60.96 35.56 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1302f1f4-f79c-41dc-8851-b7c286154622")
 		(property "Reference" "#PWR024"
 			(at 57.15 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+3.3V"
 			(at 64.77 35.5599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2207,36 +2381,42 @@
 		)
 		(property "Footprint" ""
 			(at 60.96 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 60.96 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 60.96 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "b92c0e54-e0b8-49f3-98fa-b0d71edc3cf1")
 		)
 		(instances
-			(project ""
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(reference "#PWR024")
 					(unit 1)
@@ -2248,23 +2428,29 @@
 		(lib_id "power:GND")
 		(at 60.96 33.02 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14962cba-a10f-458a-be78-6fc141d5fb49")
 		(property "Reference" "#PWR023"
 			(at 67.31 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 64.77 33.0199 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2274,36 +2460,42 @@
 		)
 		(property "Footprint" ""
 			(at 60.96 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 60.96 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 60.96 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "5594d92f-1342-4ffb-9a06-d07f7cd1e59c")
 		)
 		(instances
-			(project ""
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(reference "#PWR023")
 					(unit 1)
@@ -2315,23 +2507,29 @@
 		(lib_id "power:+3.3V")
 		(at 90.17 33.02 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d3bd941-dfac-4d57-b41b-37d024457e2d")
 		(property "Reference" "#PWR021"
 			(at 93.98 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+3.3V"
 			(at 86.36 33.0199 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2341,36 +2539,42 @@
 		)
 		(property "Footprint" ""
 			(at 90.17 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 90.17 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 90.17 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "6d068f94-c3d0-43ba-bb31-331e75895edf")
 		)
 		(instances
-			(project ""
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(reference "#PWR021")
 					(unit 1)
@@ -2383,13 +2587,17 @@
 		(lib_id "STIKE:MembraneButton")
 		(at 127 22.86 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "31977907-13ea-4005-8dfd-d03847c32eff")
 		(property "Reference" "SW2"
 			(at 127 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2398,6 +2606,8 @@
 		)
 		(property "Value" "RST"
 			(at 127 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2406,29 +2616,35 @@
 		)
 		(property "Footprint" "STIKE:MembraneButton"
 			(at 127 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 127 31.496 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, symbol, four pins"
 			(at 127 32.766 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2444,7 +2660,7 @@
 			(uuid "3382a6fd-66c9-4377-938e-6c8235d0444e")
 		)
 		(instances
-			(project "EDES301NOTER"
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(reference "SW2")
 					(unit 1)
@@ -2456,13 +2672,17 @@
 		(lib_id "STIKE:MembraneButton")
 		(at 127 33.02 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "69af09a9-bb6f-41f5-b6f8-66a3d79b3221")
 		(property "Reference" "SW1"
 			(at 127.254 38.354 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2471,6 +2691,8 @@
 		)
 		(property "Value" "Boot"
 			(at 127.254 40.894 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2479,29 +2701,35 @@
 		)
 		(property "Footprint" "STIKE:MembraneButton"
 			(at 127 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 127 41.656 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Push button switch, generic, symbol, four pins"
 			(at 127 42.926 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2517,7 +2745,7 @@
 			(uuid "42d2df6d-51d5-4dbb-bf06-8f9785bf66bf")
 		)
 		(instances
-			(project ""
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(reference "SW1")
 					(unit 1)
@@ -2529,22 +2757,28 @@
 		(lib_id "power:GND")
 		(at 118.11 35.56 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "8bc28834-7a5f-4f34-b260-bce67f25473b")
 		(property "Reference" "#PWR026"
 			(at 111.76 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 115.57 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2554,36 +2788,42 @@
 		)
 		(property "Footprint" ""
 			(at 118.11 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 118.11 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 118.11 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "a43ec47e-a797-4b6f-996a-e13c8644891d")
 		)
 		(instances
-			(project ""
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(reference "#PWR026")
 					(unit 1)
@@ -2595,23 +2835,29 @@
 		(lib_id "power:GND")
 		(at 90.17 35.56 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "adf7f826-16ba-4655-a0cc-4d6f428d0801")
 		(property "Reference" "#PWR022"
 			(at 83.82 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 86.36 35.5599 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2621,36 +2867,42 @@
 		)
 		(property "Footprint" ""
 			(at 90.17 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 90.17 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 90.17 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "a10218db-0b5d-4418-bc8a-cac7135a2f6e")
 		)
 		(instances
-			(project ""
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(reference "#PWR022")
 					(unit 1)
@@ -2660,16 +2912,20 @@
 	)
 	(symbol
 		(lib_id "STIKE:ePaper")
-		(at 92.71 46.99 90)
+		(at 99.06 46.99 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c03f11aa-e95f-454a-a4af-d7974221ec0e")
 		(property "Reference" "U7"
-			(at 105.41 40.9574 90)
+			(at 111.76 40.9574 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2677,41 +2933,49 @@
 				(justify right)
 			)
 		)
-		(property "Value" "~"
-			(at 105.41 43.4974 90)
+		(property "Value" ""
+			(at 111.76 43.4974 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "STIKE:THROUGH8"
-			(at 106.426 42.672 0)
+			(at 112.776 42.672 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 46.99 0)
+			(at 99.06 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 92.71 46.99 0)
+			(at 99.06 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "5"
@@ -2739,7 +3003,7 @@
 			(uuid "38ab0caf-4c82-4c9c-ac4b-f8e327ec32a6")
 		)
 		(instances
-			(project ""
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(reference "U7")
 					(unit 1)
@@ -2751,22 +3015,28 @@
 		(lib_id "power:+5V")
 		(at 82.55 85.09 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "d3f396dd-eed7-4e86-b3c9-9ce6ddde5d1f")
 		(property "Reference" "#PWR016"
 			(at 82.55 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+5V"
 			(at 85.344 83.312 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2775,36 +3045,42 @@
 		)
 		(property "Footprint" ""
 			(at 82.55 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 82.55 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 82.55 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "b2dc760e-8348-4a46-8061-5619b5965615")
 		)
 		(instances
-			(project ""
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(reference "#PWR016")
 					(unit 1)
@@ -2814,55 +3090,67 @@
 	)
 	(symbol
 		(lib_id "STIKE:LCD")
-		(at 58.42 40.64 270)
+		(at 43.18 40.64 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e6c1ac17-e2f9-4f3b-a3ed-cb7d0135a024")
 		(property "Reference" "U8"
-			(at 50.038 29.972 90)
+			(at 34.798 29.972 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 52.705 29.21 90)
+		(property "Value" ""
+			(at 37.465 29.21 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "STIKE:THROUGH8"
-			(at 58.42 40.64 0)
+			(at 43.18 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 40.64 0)
+			(at 43.18 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 58.42 40.64 0)
+			(at 43.18 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "6"
@@ -2890,7 +3178,7 @@
 			(uuid "3874e322-1ed7-4770-9ba9-e21b1da53fd0")
 		)
 		(instances
-			(project ""
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(reference "U8")
 					(unit 1)
@@ -2901,15 +3189,19 @@
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 82.55 88.9 0)
+		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "efc87d00-ccaa-4332-9917-97b98328b592")
 		(property "Reference" "C9"
-			(at 85.09 87.6362 0)
+			(at 80.01 87.6362 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2918,7 +3210,9 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 85.09 90.1762 0)
+			(at 80.01 90.1762 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2928,29 +3222,35 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 82.55 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 82.55 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 82.55 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2960,7 +3260,7 @@
 			(uuid "9fec4bc1-17d3-4434-9fc0-63c6310dc480")
 		)
 		(instances
-			(project ""
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(reference "C9")
 					(unit 1)
@@ -2972,23 +3272,29 @@
 		(lib_id "power:GND")
 		(at 86.36 93.98 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f0e26a32-acf8-4137-be0e-f00ef705c390")
 		(property "Reference" "#PWR025"
 			(at 92.71 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 90.17 93.9799 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2998,36 +3304,42 @@
 		)
 		(property "Footprint" ""
 			(at 86.36 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 86.36 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 86.36 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "dc837ad7-cbaf-4997-8d87-780de8628291")
 		)
 		(instances
-			(project ""
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(reference "#PWR025")
 					(unit 1)
@@ -3047,11 +3359,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "1a5f4184-f9c0-4f46-a2c7-a39db270c573")
 		(property "Sheetname" "Power Circuitry"
 			(at 92.202 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3061,12 +3375,14 @@
 		)
 		(property "Sheetfile" "Boost5V.kicad_sch"
 			(at 92.71 27.8896 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "PB_LID" passive
@@ -3080,7 +3396,7 @@
 			)
 		)
 		(instances
-			(project "EDES301NOTER"
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(page "2")
 				)
@@ -3099,11 +3415,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "5dda88bf-59f5-47b6-a0e5-bf5a75c49c5b")
 		(property "Sheetname" "LogicLevelConverter"
 			(at 71.628 82.296 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3113,12 +3431,14 @@
 		)
 		(property "Sheetfile" "CardKB.kicad_sch"
 			(at 86.3096 80.645 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "HV1" bidirectional
@@ -3162,7 +3482,7 @@
 			)
 		)
 		(instances
-			(project "EDES301NOTER"
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(page "4")
 				)
@@ -3182,11 +3502,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "92f85bbc-9448-4cf8-9475-7857c7b1f2de")
 		(property "Sheetname" "USBC-CONN"
 			(at 17.145 15.1634 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3196,12 +3518,14 @@
 		)
 		(property "Sheetfile" "STIKE-USB.kicad_sch"
 			(at 17.145 30.4296 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "USB_D-" bidirectional
@@ -3225,7 +3549,7 @@
 			)
 		)
 		(instances
-			(project "EDES301NOTER"
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(page "5")
 				)
@@ -3244,11 +3568,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "ba8aa68f-6360-4a3c-af7b-f8be00ad926c")
 		(property "Sheetname" "ESP32-S3-N16R8"
 			(at 63.5 15.7984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3258,12 +3584,14 @@
 		)
 		(property "Sheetfile" "STIKE-ESP32.kicad_sch"
 			(at 63.754 12.446 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "USB_D+" bidirectional
@@ -3457,7 +3785,7 @@
 			)
 		)
 		(instances
-			(project "EDES301NOTER"
+			(project "ProjectBackup6AM"
 				(path "/3de4aa2c-f240-4c54-9dad-2bf8de1ed5b4"
 					(page "3")
 				)
