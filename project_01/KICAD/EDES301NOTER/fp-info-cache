@@ -1,4 +1,4 @@
-27281090460160446
+27297092076254305
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -62468,6 +62468,13 @@ emi filter
 5
 5
 Footprints
+2171750001_MOL
+
+2171750001 
+0
+6
+6
+Footprints
 CAPC1608X90
 <b>CAPACITOR</b>
 
@@ -98881,6 +98888,62 @@ SOP65P400X130-8N
 0
 8
 8
+STIKE
+2171750001_MOL
+
+2171750001 
+0
+6
+6
+STIKE
+450404015514
+
+
+0
+7
+7
+STIKE
+ESP32-S3-WROOM-1_EXP
+
+ESP32-S3-WROOM-1-N16R8 
+0
+49
+49
+STIKE
+LipoConnection
+
+
+0
+4
+2
+STIKE
+MembraneButton
+
+
+0
+4
+4
+STIKE
+SAMESKY_UJ20-C-H-G-SMT-1-P16-TR
+
+
+0
+16
+16
+STIKE
+THROUGH8
+
+
+0
+8
+8
+STIKE
+TPB4056A20-ES1R
+SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+13
+9
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf

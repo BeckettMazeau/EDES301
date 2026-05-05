@@ -479,25 +479,31 @@
       {
         "name": "+3.3V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgb(221, 133, 0)"
       },
       {
         "name": "+5V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgb(255, 0, 8)"
+      },
+      {
+        "name": "5V_IN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(132, 0, 0)"
       },
       {
         "name": "DATA",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgb(194, 0, 194)"
       },
       {
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgb(0, 0, 0)"
       }
     ],
@@ -511,6 +517,9 @@
       ],
       "+5V": [
         "+5V"
+      ],
+      "+5VA": [
+        "5V_IN"
       ],
       "-BATT": [
         "GND"
@@ -566,16 +575,82 @@
       "/EPPR_RST": [
         "DATA"
       ],
+      "/ESP32-S3-N16R8/BOOT": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/EP_BUSY": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/EP_CS": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/EP_DC": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/EP_MOSI": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/EP_RST": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/EP_SCK": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/KEY_SCL": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/KEY_SDA": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/LCD_BL": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/LCD_CS": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/LCD_DC": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/LCD_MOSI": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/LCD_RST": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/LCD_SCK": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/RST": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/USB_D+": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/USB_D-": [
+        "DATA"
+      ],
+      "/ESP32-S3-N16R8/WAKE_BTN": [
+        "DATA"
+      ],
       "/Hall Effect Power Switch/PB_LID": [
         "DATA"
       ],
       "/Hall Effect Power Switch/PB_PWR": [
         "DATA"
       ],
+      "/LogicLevelConverter/HV1": [
+        "DATA"
+      ],
+      "/LogicLevelConverter/HV2": [
+        "DATA"
+      ],
       "/PB_LID": [
         "DATA"
       ],
       "/PB_PWR": [
+        "DATA"
+      ],
+      "/Power Circuitry/ ": [
         "DATA"
       ],
       "/TFT Display/TFT_BL": [
@@ -670,6 +745,10 @@
       {
         "netclass": "GND",
         "pattern": "GND"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Power Circuitry/5V_IN"
       }
     ]
   },
@@ -689,7 +768,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "C:\\Users\\becke\\Downloads\\STIKE_BOM__V0_99.csv",
+    "bom_export_filename": "C:\\Users\\becke\\Downloads\\STIKE_BOM__V2.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -903,23 +982,19 @@
     ],
     [
       "1a5f4184-f9c0-4f46-a2c7-a39db270c573",
-      "5V Boost Converter"
+      "Power Circuitry"
     ],
     [
-      "7d76e33c-e520-4ea9-bbcd-6cf2c2095ff2",
-      "Hall Effect Power Switch"
-    ],
-    [
-      "94892c2d-7155-4b73-8c30-6c5f3edee7eb",
-      "TFT Display"
+      "ba8aa68f-6360-4a3c-af7b-f8be00ad926c",
+      "ESP32-S3-N16R8"
     ],
     [
       "5dda88bf-59f5-47b6-a0e5-bf5a75c49c5b",
-      "CardKB"
+      "LogicLevelConverter"
     ],
     [
-      "7304c9f9-40d1-49dd-846e-ae25e62035ae",
-      "ePaper Support Circuit"
+      "92f85bbc-9448-4cf8-9475-7857c7b1f2de",
+      "USBC-CONN"
     ]
   ],
   "text_variables": {}
