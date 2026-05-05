@@ -1,0 +1,17 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "5d5431c8-e49b-4245-96ed-fc63246bdabb")
+	(paper "A5")
+	(title_block
+		(title "ePaper Support Circuitry")
+		(date "2026-03-24")
+		(rev "V3")
+		(company "Rice University")
+		(comment 1 "Author: Beckett Lyons Mazeau")
+		(comment 2 "Reviewed By: Erik Walsh")
+		(comment 3 "Made for EDES 301")
+	)
+	(lib_symbols)
+)
