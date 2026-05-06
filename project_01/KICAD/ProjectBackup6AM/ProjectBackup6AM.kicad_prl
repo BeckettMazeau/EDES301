@@ -121,7 +121,7 @@
     "files": [
       {
         "name": "ProjectBackup6AM.kicad_pcb",
-        "open": false,
+        "open": true,
         "window": {
           "display": 0,
           "maximized": false,
@@ -129,18 +129,6 @@
           "pos_y": 0,
           "size_x": 1294,
           "size_y": 1399
-        }
-      },
-      {
-        "name": "ProjectBackup6AM.kicad_sch",
-        "open": true,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": -8,
-          "pos_y": -8,
-          "size_x": 2576,
-          "size_y": 1408
         }
       }
     ]
